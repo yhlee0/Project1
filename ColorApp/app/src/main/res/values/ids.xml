@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="draw_btn" type="id" />
-    <item name="coloring_btn" type="id"/>
-    <item name="end_btn" type="id" />
-    <item name="changergb_btn" type="id"/>
-</resources>
