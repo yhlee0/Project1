@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    android:background="#e2e2e2">
+
+    <EditText
+        android:id="@+id/hexNumField"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Hex Code (Eg. #FFFFFF)"
+        android:inputType="textPersonName"
+        android:maxLength="7"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/bazzi"/>
+
+    <Button
+        android:id="@+id/hexToRGB_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="24dp"
+        android:text="Convert"
+        app:layout_constraintBottom_toBottomOf="@+id/hexNumField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hexNumField"
+        app:layout_constraintTop_toTopOf="@+id/hexNumField"
+        android:fontFamily="@font/bazzi"/>
+
+    <TextView
+        android:id="@+id/finalRGBTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="244dp"
+        android:text="255, 255, 255"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/bazzi"/>
+
+    <Button
+        android:id="@+id/hexToRGBFinalColor"
+        android:layout_width="109dp"
+        android:layout_height="118dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/finalRGBTextView"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/finalRGBTextView"
+        app:layout_constraintTop_toBottomOf="@+id/finalRGBTextView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="86dp"
+        android:layout_height="52dp"
+        android:text="뒤로"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938"
+        android:fontFamily="@font/bazzi"/>
+
+</android.support.constraint.ConstraintLayout>
